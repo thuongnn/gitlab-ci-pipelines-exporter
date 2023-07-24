@@ -1,6 +1,6 @@
 module github.com/thuongnn/gitlab-ci-pipelines-exporter
 
-go 1.19
+go 1.20
 
 require (
 	github.com/alicebob/miniredis/v2 v2.23.0
