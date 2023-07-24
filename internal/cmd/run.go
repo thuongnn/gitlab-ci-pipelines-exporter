@@ -12,8 +12,8 @@ import (
 	log "github.com/sirupsen/logrus"
 	"github.com/urfave/cli/v2"
 
-	"github.com/mvisonneau/gitlab-ci-pipelines-exporter/pkg/controller"
-	monitoringServer "github.com/mvisonneau/gitlab-ci-pipelines-exporter/pkg/monitor/server"
+	"github.com/thuongnn/gitlab-ci-pipelines-exporter/pkg/controller"
+	monitoringServer "github.com/thuongnn/gitlab-ci-pipelines-exporter/pkg/monitor/server"
 )
 
 // Run launches the exporter.

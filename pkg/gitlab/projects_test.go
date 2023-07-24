@@ -7,7 +7,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/mvisonneau/gitlab-ci-pipelines-exporter/pkg/config"
+	"github.com/thuongnn/gitlab-ci-pipelines-exporter/pkg/config"
 )
 
 func TestGetProject(t *testing.T) {

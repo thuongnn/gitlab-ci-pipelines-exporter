@@ -14,7 +14,7 @@ import (
 	"go.opentelemetry.io/otel"
 	"go.opentelemetry.io/otel/attribute"
 
-	"github.com/mvisonneau/gitlab-ci-pipelines-exporter/pkg/schemas"
+	"github.com/thuongnn/gitlab-ci-pipelines-exporter/pkg/schemas"
 )
 
 // GetRefPipeline ..

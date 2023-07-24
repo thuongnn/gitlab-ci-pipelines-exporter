@@ -8,7 +8,7 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 
-	pb "github.com/mvisonneau/gitlab-ci-pipelines-exporter/pkg/monitor/protobuf"
+	pb "github.com/thuongnn/gitlab-ci-pipelines-exporter/pkg/monitor/protobuf"
 )
 
 // Client ..
