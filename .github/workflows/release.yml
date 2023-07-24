@@ -5,8 +5,8 @@ on:
   push:
     tags:
       - 'v[0-9]+.[0-9]+.[0-9]+'
-    branches:
-      - main
+#    branches:
+#      - main
 
 jobs:
   release:
@@ -64,13 +64,14 @@ jobs:
 #          gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
 #          passphrase: ${{ secrets.GPG_PASSPHRASE }}
 
-      - name: Install goreleaser
+      - name: Run goreleaser
         uses: goreleaser/goreleaser-action@v4
         with:
-          version: v1.18.2
-          install-only: true
+          distribution: goreleaser
+          version: latest
+          args: release --clean
 
-      - name: Run goreleaser
-        run: make ${{ github.ref == 'refs/heads/main' && 'pre' || '' }}release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+#      - name: Run goreleaser
+#        run: make ${{ github.ref == 'refs/heads/main' && 'pre' || '' }}release
+#        env:
+#          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
